@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CUSTOMER'S SURVEY FORM</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <link href="styles.css" rel="stylesheet">
+    </head>
+    <body>
+          <main>
+            <h1 id="title">CLIENT FEEDBACK</h1>
+            <h2>SURVEY FORM</h2>
+            <p id="description">Thank you for choosing our services...</p>
+            <form id="survey-form">
+              <fieldset>
+              <legend>CLIENT INFORMATION</legend>
+<label for="name" id="name-label"> Name <input id="name" type="text" placeholder="Enter your name" required/>
+<label for="email" id="email-label"> Email <input id="email" type="email" placeholder="Enter your email" required/>
+<label for="age" id="number-label">Age<input id="number" type="number" placeholder="Select you age" required min="14" max="90"/>
+</fieldset>
+<fieldset>
+<legend> WOULD YOU RECOMMEND GLORY GEEKON TO YOU FRIENDS? </legend>
+<label for="most-definitely"><input id="most-definitely" type="radio" name="recommend" class="inline" value="not-really" checked/>Most-Definitely</label> 
+<label for="not-really"><input id="not-really" type="radio" name="recommend" class="inline" value="not-really"/>Not-Really</label>
+<label for="Already-Have"><input id="Already-Have" type="radio" name="recommend" class="inline" value="Already-Have"/>Already-Have</label>
+</fieldset>
+<fieldset>
+<legend>HOW DID YOU HEAR ABOUT US?</legend>
+<label for="facebook"><input type="checkbox" name="about us" value="face-book"/>Facebook</label> 
+<label for="instagram"><input type="checkbox" name="about us"  value="instagram"/>Instagram</label> 
+<label for="whatsapp"><input type="checkbox" name="about us" value="whatsapp"/>Whatsapp</label> 
+<label for="referral"><input type="checkbox" name="about us" value="referral"/>Referral</label> 
+</fieldset>
+<fieldset>
+<label for="satisfied"> WHERE YOU SATISFIED WITH OUR SERVICES </label>
+      <select id="dropdown" type="satisfied"required/>
+      <option value="">Select one</option>
+ <option value="1">Sure</option>
+ <option value="2">Not Really</option>
+ </select>
+   </fieldset>
+<label for="comments">ANY SUGGESTIONS/COMMENTS TO BETTER IMPROVE OUR SERVICES?
+  <textarea id="comment" name="comment" rows="3" cols="30" placeholder="You should work on...."></textarea>"
+</label>
+<input id="submit" type="submit" value="Submit"/>
+</body>
+</html>
